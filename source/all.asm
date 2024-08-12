@@ -146,6 +146,7 @@ org $410000	;RESERVED FOR SPRITE GRAPHICS TABLES
 	incsrc "kong_hack/objects/graphics/donkey_sprite_graphics_table.asm"
 	incsrc "kong_hack/objects/graphics/kiddy_sprite_graphics_table.asm"
 	incsrc "kong_hack/objects/graphics/kong_hack_sprite_graphics_table.asm"
+	incsrc "kong_hack/objects/graphics/RainbowsImportedSprites/Donkey_fanfare_sprite_graphics_table.asm"
 	print "Sprite Graphics Table End Address: ",pc
 org $420000	;RESERVED FOR RELOCATED/CUSTOM DATA
 	incsrc "exhi/bank_42.asm"
@@ -159,6 +160,8 @@ org $470000	;RESERVED FOR DEBUG FUNCTIONS
 check bankcross full
 org $480000
 	incsrc "kong_hack/objects/graphics/donkey_vanilla_graphics_1.asm"
+org $490000
+	incsrc "kong_hack/objects/graphics/RainbowsImportedSprites/data/Donkey_fanfare_data.asm"
 org $4A0000
 	incsrc "kong_hack/objects/graphics/donkey_vanilla_graphics_2.asm"
 org $4B0000
